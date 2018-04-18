@@ -1,0 +1,275 @@
+nav, header, footer
+{
+    display: block;
+}
+
+body
+{
+    margin: 0;
+}
+
+/*###### Nav bar ######*/
+
+nav
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    background-color: #000;
+    height: 41px;
+}
+
+ul.topnav
+{
+    background-color: #000;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+ul.topnav li
+{
+    list-style: none;
+    float: left;
+    display: inline-block;
+    border-right: 1px dotted darkgrey;
+    border-left: 1px dotted darkgrey;
+}
+
+ul.topnav li a
+{
+    display: block;
+    text-decoration: none;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 6px 35px;
+    text-transform: uppercase;
+    color: darkgray;
+}
+
+ul.topnav li a:hover
+{
+    background-color: #660000;
+    color: #fff;
+}
+
+ul.topnav li ul.insideList /*ol >li > ul*/
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+ul.topnav li:hover ul.insideList
+{
+    display: block;
+}
+
+ul.topnav li ul.insideList li
+{
+    clear: both;
+    list-style: none;
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 101;
+}
+
+ul.topnav li ul.insideList li a
+{
+    background-color: #FFF;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dotted darkgrey;
+}
+
+ul.topnav li ul.insideList li a:hover
+{
+    background-color: #000;
+    color: #FFF;
+}
+
+
+/*###### CONTENT ######*/
+
+header
+{
+    background-color: darkgray;
+}
+
+#headerImg
+{
+    display: block;
+    margin: 2px auto 30px;
+    width: 100%;
+    height: auto;
+}
+
+.section
+{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: black;
+    color: #FFF;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    width:100%;
+}
+
+#content
+{
+    background-color: darkgray;
+    width: 100%;
+}
+
+.music img
+{
+    margin: 50px auto 0;
+    display: block;
+}
+
+#content h1
+{
+    font-family: 'Gugi', cursive;
+    text-align: center;
+}
+
+#content h2
+{
+    font-family: 'Gugi', cursive;
+    text-align: center;
+}
+
+.music button
+{
+    display: block;
+    margin: 5px auto;
+    width: 30%;
+    padding: 5px;
+    background-color: #000;
+    text-transform: uppercase;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+
+.music button:hover
+{
+    background-color: #FFF;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/*###### PHOTOS ######*/
+
+.photosImgWrapper
+{
+    width: 100%;
+    padding: 20px;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    overflow: hidden;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.photosImgWrapper:hover
+{
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.photosImgWrapper img
+{
+    width: 100%;
+    height: auto;
+}
+
+.photosImgWrapper img:hover
+{
+    opacity: 0.5;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+.centered 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*###### CONTACT ######*/
+
+.contact p
+{
+    font-family: 'Philosopher', sans-serif;
+    text-align: justify;
+    line-height: 1.2;
+    padding: 0 20px;
+}
+
+.contactIcon
+{
+    text-align: center;
+}
+
+.contactIcon:hover
+{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.contactIcon i
+{
+    margin: auto;
+    height=width;
+    font-size: 100px;
+    display: block;
+}
+
+/*font-family: 'Philosopher', sans-serif; wolne
+font-family: 'Russo One', sans-serif; menu
+font-family: 'Gugi', cursive; h2 */ 
+
+.row
+{
+    display: flex;
+    width: 100%;
+}
+
+.row::after
+{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
